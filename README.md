@@ -5,7 +5,7 @@ Resolução do desafio "Hell Triangle" (disponível no arquivo HellTriangle-Chal
 Para rodar o script é necessário passar dois argumentos: número de linhas e o vetor que representa o triângulo.
 Para um triângulo com 4 linhas, por exemplo, o vetor seria representado da seguinte forma (onde os valores podem ser números quaisquer):
 
-[[6],[3,5],[9,7,1],[4,6,8,4]]
+ ```[[6],[3,5],[9,7,1],[4,6,8,4]] ```
  
  A chamada pela linha de comando seguiria este formato:
  
