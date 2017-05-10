@@ -16,9 +16,9 @@ Para um triângulo com 4 linhas, por exemplo, o vetor seria representado da segu
  
  O script **helltriangle.py** possui 2 métodos: maiorElemento e HellTriangle.
  
- **HellTriangle** é o método principal, responsável por receber o número de linhas e o vetor que representa o triângulo. Ele percorre todas as linhas e chama o método **maiorElemento** para descobrir qual o maior elemento daquela linha específica. Obtido este resultado, o valor retornado é adicionado ao vetor de caminho e a posição do elemento é armazenada para uso futuro. Quando todas as linhas são percorridas, o vetor de caminhos fica completo e o método simplesmente soma os valores, retornando o máximo total.
+ **HellTriangle** é o método principal, responsável por receber o número de linhas e o vetor que representa o triângulo. Ele percorre todas as linhas e chama o método **maiorElemento** para descobrir qual o maior elemento daquela linha específica. Obtido este resultado, o valor retornado é adicionado ao vetor de caminho (que contém todos os maiores elementos, desde o topo da pirâmide) e a posição do elemento é armazenada para uso futuro. Quando todas as linhas são percorridas, o vetor de caminhos fica completo e o método simplesmente soma os valores, retornando o máximo total.
  
- O método **maiorElemento** é privado e acessível apenas através do método HellTriangle. Ele é responsável por calcular o maior valor de uma dada linha. Este cálculo é feito ao comparar cada elemento da linha com um valor predeterminado e verificando qual o maior. Além desta verificação também é avaliado se o valor em questão é "vizinho" do maior valor da linha anterior.
+ O método **maiorElemento** é privado e acessível apenas através do método HellTriangle. Ele é responsável por calcular o maior valor de uma dada linha. Este cálculo é feito ao comparar cada elemento da linha e verificando qual o maior. Além desta verificação também é avaliado se o valor em questão é "vizinho" do maior valor da linha anterior.
  
  # Testes
  Os testes automatizados são feitos através do framework **PyUnit** (unittest). Para isto foi criado um script adicional chamado **testes.py**
